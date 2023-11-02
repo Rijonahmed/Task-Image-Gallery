@@ -16,9 +16,9 @@ const Sortableitem = (props) => {
     };
     console.log(props.id)
     return (
-        <div className='container '>
+        <div className='sortableitem'>
              <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
-             <div className=' w-32 h-60  bg-slate-900 text-red-700 border'><img src={props.id} alt={props.id}/></div>
+             <div><img className='bg-cover rounded-lg' src={props.id} alt={props.id}/></div>
              
 
              </div>

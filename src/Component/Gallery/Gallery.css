@@ -1,0 +1,15 @@
+.gallery-area{
+    width: 80%;
+    margin: auto;
+    background-color: aquamarine;
+    display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .';
+  gap: 30px;
+  padding: 20px;
+}
+.sortableitem:nth-child(1){
+    grid-area: myArea;
+   
+
+}
