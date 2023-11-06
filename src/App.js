@@ -4,10 +4,10 @@ import Gallery from './Component/Gallery/Gallery';
 
 function App() {
   return (
-    <div className="App">
+ 
       <Gallery/>
     
-    </div>
+    
   );
 }
 
