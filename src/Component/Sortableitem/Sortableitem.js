@@ -14,10 +14,10 @@ const Sortableitem = (props) => {
   // console.log(id)
 
   return (
-    <div className={"sortableitem relative before:content-[''] before:cursor-move"}>
+    <div className={"sortableitem relative"}>
       <div
        className={
-        "before:absolute before:h-full before:w-full before:rounded-lg before:transition-colors " +
+        "before:content-[''] before:absolute before:h-full before:w-full before:rounded-lg before:transition-colors " +
         (selectThumbnails.find((photo) => photo.id === image.id)
           ? " opacity-100"
           : " hover:before:bg-black/50")
@@ -43,8 +43,7 @@ const Sortableitem = (props) => {
         name={image.id}
         id={image.id}
         className={
-          "absolute top-4 left-4 h-5 w-5 accent-blue-500 group-hover:opacity-100 transition-opacity delay-100 duration-100 ease-linear cursor-pointer" +
-          " " +
+          "absolute top-4 left-4 h-5 w-5 accent-blue-500 group-hover:opacity-100 transition-opacity delay-100 duration-100 ease-linear cursor-pointer border-2" +
           (selectThumbnails.find((photo) => photo.id === image.id)
             ? "opacity-100"
             : "opacity-0")

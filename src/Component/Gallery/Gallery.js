@@ -8,7 +8,6 @@ import { Data } from "../../FakeData/Data";
 const Gallery = () => {
   const [images, setImages] = useState(Data);
   const [selectThumbnails, setSelectThumbnails] = useState([]);
-  console.log(selectThumbnails);
 
    // Handle delete images
    const handleDeleteClick = () => {
@@ -57,12 +56,13 @@ const Gallery = () => {
                   </label>
                 )}
               </h1>
-              <button
+              {selectThumbnails.length === 0 ? ('') : ( <button
                 className="text-red-500 font-medium"
                 onClick={handleDeleteClick}
               >
                 Delete files
-              </button>
+              </button>)}
+             
             </article>
           </nav>
           <hr/>
